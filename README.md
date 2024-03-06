@@ -2,6 +2,12 @@
 * My personal blog site made with Next.js and shadcn. Contains dark, light and system theme changing button.
 * Check out the website [here](https://fazeblog.vercel.app/)
 
+## Todo
+- [] Add personal Information
+- [] Add images in blog content
+- [] Add all blogs
+- [] Add particle effects
+
 # Docs
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
