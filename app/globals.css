@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%; 
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%; 
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%; 
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 174 60% 40%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 22% 85%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 22% 85%;
+    --muted-foreground: 222.2 47.4% 11.2%;
+    --accent: 174 60% 40%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%
+    --destructive-foreground: 210 40% 98%;
+    --border: 210 22% 85%;
+    --input: 210 22% 85%;
+    --ring: 174 60% 40%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 210 40% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 210 40% 98%;
+    --popover: 0 0% 10%; 
+    --popover-foreground: 210 40% 98%; 
+    --primary: 174 60% 40%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 22% 30%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 210 22% 30%;
+    --muted-foreground: 210 40% 98%;
+    --accent: 174 60% 40%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 210 22% 30%;
+    --input: 210 22% 30%;
+    --ring: 174 60% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.5s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-fade-in-up-0 { animation: fadeInUp 0.5s ease-out; }
+.animate-fade-in-up-1 { animation: fadeInUp 0.5s ease-out 0.1s; }
+.animate-fade-in-up-2 { animation: fadeInUp 0.5s ease-out 0.2s; }
+.animate-fade-in-up-3 { animation: fadeInUp 0.5s ease-out 0.3s; }
+.animate-fade-in-up-4 { animation: fadeInUp 0.5s ease-out 0.4s; }
+/* Add more if needed for additional blog posts */
+
+.animate-fade-in-up-0,
+.animate-fade-in-up-1,
+.animate-fade-in-up-2,
+.animate-fade-in-up-3,
+.animate-fade-in-up-4 {
+  animation-fill-mode: both;
+}
