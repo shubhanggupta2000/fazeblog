@@ -2,7 +2,8 @@ import Link from "next/link";
 import { getPostBySlug } from "../../lib/medium";
 
 export default async function BlogPost({ params }) {
-  const post = await getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
 
   return (
     <div className="container mx-auto px-4 py-12">
