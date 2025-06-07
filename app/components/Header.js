@@ -8,14 +8,14 @@ export default function Header() {
 
   return (
     <header
-      className={`p-4 flex justify-between items-center ${
+      className={`w-full py-4 ${
         darkMode ? "bg-white text-gray-900" : "bg-slate-900 text-sky-200"
       }`}
     >
-      <div className="text-2xl mx-96 my-4 font-bold flex items-center space-x-2">
+      <div className="max-w-[1200px] mx-auto px-4 md:px-8 lg:px-0 flex items-center justify-start py-4">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-md font-bold">Faze</span>
-          <div className="bg-blue-600 text-white rounded-xl px-2 py-1 font-bold text-md">
+          <span className="text-lg md:text-xl font-bold">Faze</span>
+          <div className="bg-blue-600 text-white rounded-xl px-2 py-1 font-bold text-lg md:text-xl">
             Blog
           </div>
         </Link>

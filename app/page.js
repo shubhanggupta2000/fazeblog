@@ -6,7 +6,7 @@ export default async function Home() {
   const posts = await getPosts();
 
   return (
-    <main className="min-h-screen py-12 px-4 bg-slate-900">
+    <main className="min-h-screen py-24 px-4 bg-slate-900">
       <div className="container mx-auto">
         <ProfileSection />
         <BlogGrid posts={posts} />
