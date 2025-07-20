@@ -1,6 +1,7 @@
 # FazeBlog
 
-FazeBlog is a modern, visually appealing personal blogging website built with Next.js and Tailwind CSS. It fetches and displays your latest Medium posts in a beautiful card grid, with each post featuring a cover image, category, and publication date. The site includes a stylish profile section with animated social links, a responsive layout, and a dark-themed design for an elegant reading experience.
+FazeBlog is a personal blogging website built with Next.js and Tailwind CSS. It fetches and displays your latest Medium posts in a beautiful card grid, with each post featuring a cover image, category, and publication date.
+Click on this [link](https://blog.guptashubhang.tech/) to view the blog page.
 
 ## ✨ Features
 
@@ -12,9 +13,10 @@ FazeBlog is a modern, visually appealing personal blogging website built with Ne
 - **SEO Friendly:** Built with Next.js for fast performance and SEO optimization.
 - **Easy Customization:** Update your Medium username and social links in one place.
 
-## 🖼️ Preview
+## 🖼️ Glimpse
 
-![FazeBlog Screenshot](public/me.jpg)
+<img width="1898" height="1071" alt="Screenshot from 2025-07-20 20-06-16" src="https://github.com/user-attachments/assets/e466bfa8-15eb-4988-b0e0-6e6a8447c5eb" />
+<img width="1902" height="1076" alt="Screenshot from 2025-07-20 20-06-29" src="https://github.com/user-attachments/assets/0e8a6de2-442f-4df0-87c9-1a94a7034373" />
 
 ## 🚀 Tech Stack
 
@@ -22,7 +24,3 @@ FazeBlog is a modern, visually appealing personal blogging website built with Ne
 - React
 - Tailwind CSS (+ Typography plugin)
 - RSS Parser
-
----
-
-> Developing the tech world, one line of code at a time.
