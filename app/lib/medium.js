@@ -1,17 +1,17 @@
 import Parser from "rss-parser";
 
 const parser = new Parser();
-const mediumUsername = process.env.MEDIUM_USERNAME; // Ensure this is set in your .env file
+const mediumUsername = process.env.MEDIUM_USERNAME;
 
 export async function getPosts() {
   const feedUrl = `https://medium.com/feed/@${mediumUsername}`;
   try {
     const feed = await parser.parseURL(feedUrl);
     return feed.items.map((item) => {
-      const slug = item.link.split("/").pop().split("?")[0]; // Clean the slug
+      const slug = item.link.split("/").pop().split("?")[0];
       return {
         id: item.guid,
-        slug, // Use the cleaned slug
+        slug,
         title: item.title,
         content: item["content:encoded"] || item.content,
         description: item.contentSnippet,
