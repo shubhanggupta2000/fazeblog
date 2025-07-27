@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { getPostBySlug } from "../../lib/medium";
 
+export const dynamic = "force-dynamic";
+
 export default async function BlogPost({ params }) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);

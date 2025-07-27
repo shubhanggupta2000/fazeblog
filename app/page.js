@@ -2,6 +2,8 @@ import ProfileSection from "./components/ProfileSection";
 import BlogGrid from "./components/BlogGrid";
 import { getPosts } from "../lib/medium";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const posts = await getPosts();
 
