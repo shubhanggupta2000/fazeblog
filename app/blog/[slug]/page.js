@@ -1,5 +1,5 @@
+import { getPostBySlug } from "@/lib/medium";
 import Link from "next/link";
-import { getPostBySlug } from "../../lib/medium";
 
 export const dynamic = "force-dynamic";
 
