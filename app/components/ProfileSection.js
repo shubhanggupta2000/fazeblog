@@ -9,7 +9,7 @@ import { BsMedium } from "react-icons/bs";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
 const socialLinks = {
-  profile: "https://www.guptashubhang.tech/",
+  profile: "https://guptashubhang.vercel.app/",
   github: "https://github.com/shubhanggupta2000",
   linkedin: "https://www.linkedin.com/in/gupta-shubhang/",
   leetcode: "https://leetcode.com/u/Shubhang_Gupta/",
@@ -49,7 +49,7 @@ export default function ProfileSection() {
           transition={{ type: "spring", stiffness: 300, damping: 10 }}
         >
           <Image
-            src="/me.jpg"
+            src="/profile.jpg"
             alt="Profile Picture"
             width={392}
             height={392}
