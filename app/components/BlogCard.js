@@ -6,9 +6,7 @@ export default function BlogCard({ post }) {
       <div
         className="card__background"
         style={{
-          backgroundImage: `url(${
-            post.coverImage || "/placeholder.svg?height=225&width=150"
-          })`,
+          backgroundImage: `url("${(post.coverImage || "/placeholder.svg?height=225&width=150").replace(/"/g, "")}")`,
         }}
       ></div>
       <div className="card__content">
